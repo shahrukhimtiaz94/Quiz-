@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Pacifico&family=Playwrite+MX+Guides&family=Playwrite+TZ+Guides&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(255, 206, 99);;
+}
+
+input#name {
+    height: 40px;
+    color: black;
+    width: 120% !important;
+}
+.userinfo {
+   font-size: 30px;
+    padding-bottom: 5px;
+    display: flex;
+    border-bottom: 1px solid;
+    font-weight: bold;
+}
+h1 {
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+  text-align: center;
+  color: rgb(255, 255, 255) !important;
+  padding: 15px 15px 15px 15px;
+  background-color: rgba(0, 0, 0, 0.503);
+}
+
+#heading3{
+    color: white !important;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url(./Assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cont{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.quiz-stop{
+    padding: 25px 25px 25px 25px;
+    border: 2px solid rgb(255, 206, 99);;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: black;
+    border-radius: 15px;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+.quiz-body
+{
+    padding: 51px 100px 50px 100px;
+    border: 2px solid rgb(255 255 255);
+    display: flex
+;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    gap: 25px;
+    display: none;
+    border-radius: 15px;
+    font-size: 26px;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.q-box
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ans-box
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.ans
+{
+    display: flex;
+    gap: 5px;
+}
+h4#playerName {
+    margin-left: 5px;
+}
+span#spanWelcome {
+    display: none;
+}
+.time-div
+{
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.timer
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.timemachine
+{
+    display: none;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 60px;
+}
+
+.hide{
+    display: none;
+}
+
+.btn-s{
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    padding: 15px 55px;
+    border-radius: 62px;
+}
+
+.btn-s:hover{
+    background-color: wheat;
+}
+
+.buttons{
+    margin: 10px;
+    border: none;
+    background-color: rgb(255, 206, 99);
+    color: black !important;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#options{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons:hover{
+    background-color: white;
+
+}
+
+.two-btns
+{
+    width: 80%;
+    /* display: flex; */
+    display: none;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 680px) {
+    .cont{
+        flex-direction: column-reverse;
+    }
+
+    .main{
+        overflow-y: scroll;
+    }
+
+    .time-div{
+        width: auto;
+        height: auto;
+    }
+
+    .timer
+    {
+        flex-direction: row;
+    }
+}
